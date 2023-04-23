@@ -68,7 +68,8 @@ class MyHomePage extends ConsumerWidget {
                 fillColor: Colors.grey.shade300,
                 backgroundColor: Colors.white,
                 strokeWidth: 15.0,
-                isReverse: true,
+                isReverse: false,
+                isReverseAnimation: true,
                 textStyle: const TextStyle(
                   fontSize: 33.0,
                   color: Colors.black38,
@@ -80,7 +81,7 @@ class MyHomePage extends ConsumerWidget {
                 },
                 timeFormatterFunction: (_, duration) {
                   if(duration.inMilliseconds == 0){
-                    return "00:03:00";
+                    return "00:00:00";
                   } else {
                     return _printDuration(duration);
                   }
